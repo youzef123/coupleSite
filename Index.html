@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="./Assets/ScrollAnim/scroll.css">
+    <title>Our Love Story | Photo Gallery</title>
+ 
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+          <section class="section hero"></section>
+        </div>
+        <div class="image-container">
+          <!-- <img src="https://assets-global.website-files.com/63ec206c5542613e2e5aa784/643312a6bc4ac122fc4e3afa_main%20home.webp" alt="image"> -->
+           <img src="./Assets/Photos/base.png" alt="image">
+        </div>
+      </div>
+
+    <!-- Hero Section with Flower Animation -->
+ 
+    <section class="hero">
+        <div class="flower-container" id="flower-container"></div>
+        <div class="hero-content">
+            <h1>Our Love Story</h1>
+            <p>A beautiful journey of memories together</p>
+            <a href="#gallery" class="btn">View Our Gallery</a>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+     
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Memories</h2>
+                <p>Browse through the chapters of our love story</p>
+            </div>
+            
+            <div class="categories">
+                <div class="category active" data-filter="all">All Memories</div>
+                <div class="category" data-filter="dates">Special Dates</div>
+                <div class="category" data-filter="trips">Trips</div>
+                <div class="category" data-filter="events">Events</div>
+            </div> 
+            
+
+                            <!-- Images will be populated dynamically with JavaScript, these are placeholders -->
+
+          <div class="gallery-grid">
+                <div class="gallery-item" data-category="dates">
+                    <img src="./Assets/Photos/img1.JPG" alt="Our First Date">
+                    <div class="item-overlay">
+                        <h3>Our First Date</h3>
+                        <p>The day it all began</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="trips">
+                    <img src="./Assets/Photos/img2.JPG" alt="Photobooth date">
+                    <div class="item-overlay">
+                        <h3>Beach Getaway</h3>
+                        <p>Summer memories by the ocean</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="/api/placeholder/400/320" alt="Anniversary Dinner">
+                    <div class="item-overlay">
+                        <h3>Anniversary Dinner</h3>
+                        <p>Celebrating another year together</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="trips">
+                    <img src="/api/placeholder/400/320" alt="Mountain Hike">
+                    <div class="item-overlay">
+                        <h3>Mountain Hike</h3>
+                        <p>Conquering peaks together</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <video src="https://cdnjs.cloudflare.com/ajax/libs/loremVideo/1.0.0/video/waterfall.mp4" poster="/api/placeholder/400/320">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="item-overlay">
+                        <h3>Dancing Together</h3>
+                        <p>That magical moment on the dance floor</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="dates">
+                    <img src="/api/placeholder/400/320" alt="Picnic in the Park">
+                    <div class="item-overlay">
+                        <h3>Picnic in the Park</h3>
+                        <p>Simple moments make the best memories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline / Love Story Section -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Journey Together</h2>
+                <p>From the first hello to forever</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>First Meeting</h3>
+                        <span class="timeline-date">January 15, 2022</span>
+                        <p>We first crossed paths at a friend's party. I noticed your smile from across the room, and the rest is history.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>First Date</h3>
+                        <span class="timeline-date">January 22, 2022</span>
+                        <p>Coffee and a walk in the park. Hours of conversation that felt like minutes.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Official Couple</h3>
+                        <span class="timeline-date">February 14, 2022</span>
+                        <p>Valentine's Day became our anniversary when we made it official.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>First Trip Together</h3>
+                        <span class="timeline-date">May 10, 2022</span>
+                        <p>Weekend getaway to the beach. We talked about our dreams as we watched the sunset.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Moving In Together</h3>
+                        <span class="timeline-date">November 1, 2022</span>
+                        <p>Starting our life together under one roof. Every day with you feels like home.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox for Gallery Items -->
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content"></div>
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>Created with <span class="heart">❤</span> for my beautiful girlfriend</p>
+        <p>&copy; 2025 Our Love Story</p>
+    </footer>
+
+    <!-- JavaScript -->
+  <script src="./Assets/script.js"></script>
+  <script src="./Assets/ScrollAnim/scroll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.1/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.1/dist/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    window.addEventListener("load", () => {
+        gsap
+            .timeline({
+                scrollTrigger: {
+                    trigger: ".wrapper",
+                    start: "top top",
+                    end: "+=150%",
+                    pin: true,
+                    scrub: true,
+                    markers: false
+                }
+            })
+            .to("img", {
+                scale: 2,
+                z: 350,
+                transformOrigin: "center center",
+                ease: "power1.inOut"
+            })
+            .to(
+                ".section.hero",
+                {
+                    scale: 1.1,
+                    transformOrigin: "center center",
+                    ease: "power1.inOut"
+                },
+                "<"
+            );
+    });
+</script>
+</body>
+</html>
